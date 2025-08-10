@@ -3,7 +3,25 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "echo \"Replace with your framework's dev command (e.g., react-scripts start / next dev / expo start)\" && sleep 1",
-    "build": "echo \"build step - replace with real build\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "purva.sharma1",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.2.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "5.9.2"
   }
 }

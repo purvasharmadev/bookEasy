@@ -1,8 +1,46 @@
-node_modules
-dist
-/.turbo
+# Node modules
+node_modules/
+**/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+expo-app/.expo/
+.expo/
+
+# Local environment variables
 .env
+.env.*
+!.env.example
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Editor junk
+.vscode/
+.idea/
 .DS_Store
-.vscode
-npm-debug.log
-yarn-error.log
+Thumbs.db
+
+# Coverage reports
+coverage/
+
+# Misc
+*.log
+*.tmp
+*.temp
+
+# Docker
+docker-compose.override.yml
+*.local
+
+# OS files
+Icon?

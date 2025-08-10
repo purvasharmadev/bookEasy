@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+
+  admin:
+    build: ./apps/admin
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+
+  customer:
+    build: ./apps/customer
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+# Note: mobile typically runs with expo/react-native CLI; containerizing RN requires extra setup.

@@ -1,0 +1,16 @@
+{
+  "name": "fleet-monorepo-ts",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "backend"
+  ],
+  "scripts": {
+    "dev:admin": "cd apps/admin && yarn dev",
+    "dev:customer": "cd apps/customer && yarn dev",
+    "dev:mobile": "cd apps/mobile && yarn start",
+    "dev:backend": "cd backend && yarn dev",
+    "bootstrap": "yarn install"
+  }
+}

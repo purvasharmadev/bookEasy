@@ -6,7 +6,6 @@ function App() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "red",
       }}
     >
       <h1>Admin Panel 🛠</h1>
